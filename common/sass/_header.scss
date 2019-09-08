@@ -13,7 +13,7 @@ header{
     .inner{
         margin: 0 auto;
         max-width: 96%;
-        width: 1086px;
+        width: 1088px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -36,6 +36,7 @@ header{
             }
             .global-nav__list{
                 display: flex;
+                margin: 0 5px 0 0;
                 &>.global-nav__list__item{
                     margin: 0 0 0 30px;
                     &:first-child{
@@ -55,7 +56,7 @@ header{
     }
 }
 .mv{
-    padding: 101px 0 0;
+    padding: 98px 0 0;
     background: url(../img/mainvisual.png) no-repeat center bottom;
     @include mq(sm){
         padding-top: calc(39px + 2%);
@@ -68,7 +69,7 @@ header{
         width: 800px;
         max-width:95%;
         margin: 0 auto;
-        padding: 150px 0 140px;
+        padding: 150px 0 138px;
         text-align: center;
         @include mq(sm){
             padding: 10% 0 10%;
@@ -87,8 +88,9 @@ header{
         }
         .readbox__readtext{
             line-height: 1.29;
-            margin-top: 12px;
+            margin-top: 13px;
             font-size: 3.8rem;
+            font-weight: bold;
             @include mq(sm){
                 font-size: 2rem;
             }
@@ -101,8 +103,8 @@ header{
             box-sizing: border-box;
             display: inline-block;
             width: 390px;
-            margin: 82px 0 0;
-            padding: 17px 20px;
+            margin: 81px 0 0;
+            padding: 18px 20px 16px;
             border-radius: 12px;
             background: #3F51B5;
             color: #FFFFFF;

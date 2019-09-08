@@ -51,7 +51,7 @@ header {
 header .inner {
   margin: 0 auto;
   max-width: 96%;
-  width: 1086px;
+  width: 1088px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,6 +96,7 @@ header .inner .global-nav .global-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 5px 0 0;
 }
 
 header .inner .global-nav .global-nav__list > .global-nav__list__item {
@@ -117,7 +118,7 @@ header .inner .global-nav .global-nav__list > .global-nav__list__item > a:hover 
 }
 
 .mv {
-  padding: 101px 0 0;
+  padding: 98px 0 0;
   background: url(../img/mainvisual.png) no-repeat center bottom;
 }
 
@@ -135,7 +136,7 @@ header .inner .global-nav .global-nav__list > .global-nav__list__item > a:hover 
   width: 800px;
   max-width: 95%;
   margin: 0 auto;
-  padding: 150px 0 140px;
+  padding: 150px 0 138px;
   text-align: center;
 }
 
@@ -164,8 +165,9 @@ header .inner .global-nav .global-nav__list > .global-nav__list__item > a:hover 
 
 .mv .readbox .readbox__readtext {
   line-height: 1.29;
-  margin-top: 12px;
+  margin-top: 13px;
   font-size: 3.8rem;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 559px) {
@@ -184,8 +186,8 @@ header .inner .global-nav .global-nav__list > .global-nav__list__item > a:hover 
   box-sizing: border-box;
   display: inline-block;
   width: 390px;
-  margin: 82px 0 0;
-  padding: 17px 20px;
+  margin: 81px 0 0;
+  padding: 18px 20px 16px;
   border-radius: 12px;
   background: #3F51B5;
   color: #FFFFFF;
