@@ -1,0 +1,32 @@
+@charset "utf-8";
+//ファイルの読み込み
+@import "./_variable.scss";
+
+html{
+    overflow:auto;
+    font-size: 62.5%;
+}
+body{
+    overflow:hidden;
+    font-size: 1.6rem;
+    font-family: 'Yu Gothic';
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.wrap{
+    @include mq(){
+        max-width: initial;
+    }
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+//ファイルの読み込み
+@import "./_header.scss";

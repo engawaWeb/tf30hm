@@ -1,0 +1,16 @@
+$theme_blue :#3F51B5;
+$contents_color:#6F7579;
+
+$breakpoints:(
+    'sm':'screen and (max-width: 559px)',
+    'md':'screen and (max-width: 959px)',
+    'lg':'screen and (max-width: 999px)',
+    'xl':'screen and (max-width: 1200px)',
+    'rd':'screen and (-webkit-min-device-pixel-ratio: 2',
+ )!default;
+
+@mixin mq($breakpoint:md){
+    @media #{map-get($breakpoints,$breakpoint)}{
+        @content;
+    }
+}

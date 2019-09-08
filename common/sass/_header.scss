@@ -1,0 +1,127 @@
+@import "./_variable.scss";
+
+header{
+    position: fixed;
+    top:0;
+    background:$theme_blue;
+    width: 100%;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.16);
+    z-index: 100;
+    @include mq(){
+        max-width: initial;
+    }
+    .inner{
+        margin: 0 auto;
+        max-width: 96%;
+        width: 1086px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; //子要素の改行（カラム落ち）を許容する
+        padding: 30px 0;
+        @include mq(sm){
+            justify-content: center;
+            padding: 1% 2%;
+        }
+        .logo{
+            margin-right: 20px;
+            width: 200px;
+            @include mq(sm){
+                margin-right: 0;
+            }
+        }
+        .global-nav{
+            @include mq(sm){
+                display: none;
+            }
+            .global-nav__list{
+                display: flex;
+                &>.global-nav__list__item{
+                    margin: 0 0 0 30px;
+                    &:first-child{
+                        margin: 0;
+                    }
+                    &>a{
+                        color:#FFFFFF;
+                        &:hover{
+                            text-decoration: none;
+                            padding-bottom: 5px;
+                            border-bottom: 3px solid #E81919;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mv{
+    padding: 101px 0 0;
+    background: url(../img/mainvisual.png) no-repeat center bottom;
+    @include mq(sm){
+        padding-top: calc(39px + 2%);
+        background-position: top;
+    }
+    .readbox{
+        position:relative;
+        top:0;
+        left:0;
+        width: 800px;
+        max-width:95%;
+        margin: 0 auto;
+        padding: 150px 0 140px;
+        text-align: center;
+        @include mq(sm){
+            padding: 10% 0 10%;
+        }
+        .readbox__heading01{
+            line-height: 1.28;
+            font-weight: bold;
+            font-size: 6.8rem;
+            @include mq(sm){
+                font-size: 4rem;
+            }
+            .readbox__heading01__span{
+                display: inline-block;
+                text-align: center;
+            }
+        }
+        .readbox__readtext{
+            line-height: 1.29;
+            margin-top: 12px;
+            font-size: 3.8rem;
+            @include mq(sm){
+                font-size: 2rem;
+            }
+            .readbox__readtext__span{
+                display: inline-block;
+                text-align: center;
+            }
+        }
+        .readbox__btn{
+            box-sizing: border-box;
+            display: inline-block;
+            width: 390px;
+            margin: 82px 0 0;
+            padding: 17px 20px;
+            border-radius: 12px;
+            background: #3F51B5;
+            color: #FFFFFF;
+            line-height: 1.29;
+            font-size: 3.8rem;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            &:hover{
+                background: darken($theme_blue, 10%);
+            }
+            @include mq(sm){
+                width: 80%;
+                font-size: 2rem;
+            }
+            .readbox__btn__text{
+                display: inline-block;
+                text-align: left;
+            }
+        }
+    }
+}
