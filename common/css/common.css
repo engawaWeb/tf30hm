@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   overflow: auto;
   font-size: 62.5%;
@@ -6,7 +7,7 @@ html {
 body {
   overflow: hidden;
   font-size: 1.6rem;
-  font-family: 'Yu Gothic';
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
   line-height: 1.6;
 }
 
@@ -194,10 +195,12 @@ header .inner .global-nav .global-nav__list > .global-nav__list__item > a:hover 
   text-align: center;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 .mv .readbox .readbox__btn:hover {
-  background: #32408f;
+  background-color: #32408f;
 }
 
 @media screen and (max-width: 559px) {

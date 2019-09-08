@@ -83,6 +83,8 @@
 
 .card__container .card__list .card__list__item .card__list__item__img .card__list__item__img__link {
   color: #FFFFFF;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .card__container .card__list .card__list__item .card__list__item__img .card__list__item__img__link:hover {
@@ -103,6 +105,8 @@
 
 .card__container .card__list .card__list__item .card__list__item__dl .card__list__item__dt .card__list__item__dt__link {
   color: #6F7579;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .card__container .card__list .card__list__item .card__list__item__dl .card__list__item__dt .card__list__item__dt__link:hover {

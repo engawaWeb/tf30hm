@@ -17,7 +17,7 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap; //子要素の改行（カラム落ち）を許容する
+        flex-wrap: wrap;
         padding: 30px 0;
         @include mq(sm){
             justify-content: center;
@@ -111,8 +111,9 @@ header{
             font-weight: bold;
             text-align: center;
             box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            transition: background-color 0.2s;
             &:hover{
-                background: darken($theme_blue, 10%);
+                background-color: darken($theme_blue, 10%);
             }
             @include mq(sm){
                 width: 80%;
