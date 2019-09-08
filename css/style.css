@@ -67,9 +67,7 @@
   .card__container .card__list .card__list__item {
     width: 100%;
     margin-right: 0;
-  }
-  .card__container .card__list .card__list__item:nth-child(3n) {
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 
