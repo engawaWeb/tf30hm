@@ -1,0 +1,400 @@
+@charset "utf-8";
+//ファイルの読み込み
+@import "../common/sass/_variable.scss";
+@import "./_variable.scss";
+
+header{
+    display: none;
+}
+
+main{
+    max-width: 95%;
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+$mtop: 5;
+@while $mtop <= 50 {
+    .mt#{$mtop}{
+        margin-top:$mtop + px;
+    }
+    $mtop: $mtop + 5;
+}
+.center{
+    text-align: center;
+}
+
+.headingPattern01{
+    @include heading2;
+    padding:0.5rem 0;
+    border-bottom: 3px solid $theme_color;
+}
+.headingPattern02{
+    @include heading2;
+    border-bottom: 3px dashed $theme_color;
+}
+.headingPattern03{
+    @include heading2;
+    padding:0.1rem 1rem;
+    background: $theme_color;
+    color: #FFFFFF;
+}
+.headingPattern04{
+    @include heading2;
+    padding:0.1rem 1rem;
+    background: #7385E9;
+    color: #FFFFFF;
+    border-bottom: 3px solid $theme_color;
+}
+.headingPattern05{
+    @include heading2;
+    padding:0 0.7rem;
+    color: #333333;
+    border-left: 5px solid $theme_color;
+}
+.headingPattern06{
+    @include heading2;
+    color: #333333;
+    .text{
+        padding: 0.2rem 0;
+        background: linear-gradient(to top, rgba(215,239,70,1) 0%,rgba(215,239,70,1) 50%,transparent 51%,transparent 100%);
+    }
+}
+.headingPattern07{
+    @include heading2;
+    color: #333333;
+    .text{
+        padding: 0.2rem 0.4rem;
+        background: #D7EF46;
+    }
+}
+.headingPattern08{
+    @include heading2;
+    position: relative;
+    padding:0.1rem 1rem;
+    background: $theme_color;
+    color: #FFFFFF;
+    &::after{
+        @include beforeAfter();
+        bottom: -26px;
+        left:56px;
+        border:13px solid transparent; 
+        border-top: 13px solid $theme_color;
+        width: 0;
+        height: 0;
+    }
+}
+.headingPattern09{
+    @include heading2;
+    position: relative;
+    padding:0.5rem 0;
+    border-bottom: 2px solid $theme_color;
+    &::after{
+        @include beforeAfter();
+        bottom: -2px;
+        left:0;
+        display: block;
+        border-bottom: 2px solid #B53F4F;
+        width: 17%;
+    }
+}
+.headingPattern10{
+    @include heading2;
+    position: relative;
+    padding:0 0 0 1.2rem;
+    color: #333333;
+    &::after{
+        @include beforeAfter();
+        top: 1.2rem;
+        left: 0;
+        display: block;
+        height: 1.6rem;
+        border-left: 5px solid $theme_color;
+    }
+}
+.headingPattern11{
+    @include heading2;
+    position: relative;
+    padding: 0 0 16px;
+    color: #333333;
+    text-align: center;
+    &::after{
+        @include beforeAfter();
+        bottom:0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: block;
+        width: 52px;
+        height: 4px;
+        background: $theme_color;
+    }
+    .text{
+        display: inline-block;
+        text-align: left;
+    }
+}
+.headingPattern12{
+    @include heading2;
+    position: relative;
+    padding:0 0 0 3rem;
+    color: #333333;
+    &::before{
+        @include beforeAfter();
+        top: 22px;
+        left: 0;
+        margin: auto;
+        display: block;
+        width: 12px;
+        height: 5px;
+        background: $theme_color;
+        transform: rotate(45deg);
+        border-radius: 1px;
+    }
+    &::after{
+        @include beforeAfter();
+        top: 18px;
+        left: 5px;
+        margin: auto;
+        display: block;
+        width: 20px;
+        height: 5px;
+        background: $theme_color;
+        transform: rotate(-45deg);
+        border-radius: 10px;
+    }
+}
+.headingPattern13{
+    @include heading2;
+    position: relative;
+    display: inline-block;
+    color: #333333;
+    padding: 0 26px 0 0;
+    &::before{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: auto;
+        content: "";
+        display: block;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        border: 4px solid $theme_color;
+    }
+    &::after{
+        @include beforeAfter();
+        top: 17px;
+        right: 0;
+        margin: auto;
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-top:4px solid $theme_color;
+        transform: rotate(45deg);
+    }
+}
+.headingPattern14{
+    @include heading2;
+    padding: 0 2.5rem;
+    position: relative;
+    display: inline-block;
+    color: #333333;
+    text-align: left;
+    &::before{
+        @include beforeAfter();
+        bottom: 0.5rem;
+        left: 0.9rem;
+        display: block;
+        width: 1.2rem;
+        height: 81.62%;
+        max-height: 100px;
+        border-left: 3px solid $theme_color;
+        transform: rotate(-15deg);
+    }
+    &::after{
+        @include beforeAfter();
+        bottom: 0.5rem;
+        right: 0.9rem;
+        display: block;
+        width: 1.2rem;
+        height: 81.62%;
+        max-height: 100px;
+        border-right: 3px solid $theme_color;
+        transform: rotate(15deg);
+    }
+}
+.headingPattern15{
+    position: relative;
+    @include heading2;
+    color: #333333;
+    text-align: center;
+    &::before{
+        @include beforeAfter();
+        top: 50%;
+        display: block;
+        width: 100%;
+        border-top: 3px solid $theme_color;
+    }
+    .text{
+        position: relative;
+        top:0;
+        bottom: 0;
+        margin: auto;
+        box-sizing: border-box;
+        max-width: 90%;
+        padding: 0 1rem;
+        display: inline-block;
+        background: #fff;
+        text-align:left;
+    }
+}
+.headingPattern16{
+    @include heading2;
+    color: #333333;
+    .text{
+        display: inline-block;
+        padding: 0.2rem 1rem;
+        background: repeating-linear-gradient(-45deg, rgba(157,175,252,1),rgba(157,175,252,1) 10px,rgba(104,118,226,1) 10px,rgba(104,118,226,1) 20px);
+    }
+}
+.headingPattern17{
+    @include heading2;
+    color: #333333;
+    .text{
+        padding: 0.6rem 1rem;
+        background: repeating-linear-gradient(0deg, transparent,transparent 50%,#fff 50%,#fff 100%),
+                    repeating-linear-gradient(-45deg, rgba(157,175,252,1),rgba(157,175,252,1) 10px,rgba(104,118,226,1) 10px,rgba(104,118,226,1) 20px);
+    }
+}
+.buttonPattern01{
+    @include button1();
+    &:hover{
+        background: darken($theme_color, 10%);
+    }
+}
+.buttonPattern02{
+    position: relative;
+    @include button1($p:1.2rem 3.5rem 1.3rem  1.6rem);
+    &:hover{
+        background: darken($theme_color, 10%);
+    }
+    &::after{
+        @include beforeAfter();
+        top:0;
+        right:4px;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        width: 0;
+        height: 0;
+        border:7px solid transparent;
+        border-left: 7px solid #fff;
+    }
+}
+.buttonPattern03{
+    @include button1($p:1.2rem 3.5rem 1.3rem  1.6rem);
+    &:hover{
+        background: darken($theme_color, 10%);
+    }
+    .text{
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        max-width: 100%;
+        &::after{
+            @include beforeAfter();
+            top:0;
+            right:-2.7rem;
+            bottom: 0;
+            margin: auto;
+            display: block;
+            width: 0;
+            height: 0;
+            border:7px solid transparent;
+            border-left: 7px solid #fff;
+        }
+    }
+}
+.buttonPattern04{
+    @include button1($p:1.2rem 3.5rem 1.3rem);
+    box-shadow: 0px 5px 0px #25379B;
+    &:hover{
+        background: darken($theme_color, 10%);
+    }
+}
+.buttonPattern05{
+    position: relative;
+    @include button1($p:1.2rem 3.5rem 1.3rem,$bg:transparent,$transition:none);
+    &::before{
+        @include beforeAfter();
+        top:0;
+        left:0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        background: linear-gradient(to bottom, rgba($theme_color,1) 0%,rgba(#20295B,1) 100%);
+        transition:opacity 0.2s;
+    }
+    &:hover::before{
+        opacity: 0;
+    }
+    &::after{
+        @include beforeAfter();
+        top:0;
+        left:0;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        background: linear-gradient(to top, rgba($theme_color,1) 0%,rgba(#20295B,1) 100%);
+    }
+}
+.buttonPattern06Outer{
+    background: #333;
+    padding: 2.6rem 2.5rem 2.8rem;
+}
+.buttonPattern06{
+    @include button1($p:1.2rem 3.5rem 1.3rem,$bg:#333,$radius:0);
+    box-sizing: border-box;
+    border: 2px solid #FFFFFF;
+    &:hover{
+        background: darken($theme_color, 10%);
+    }
+}
+.buttonPattern07{
+    @include button1($minw:123px,$p:3.5rem 2.9rem 3.6rem,$radius:50%);
+    box-sizing: border-box;
+    width: 123px;
+    &:hover{
+        background: darken($theme_color, 10%);
+    }
+}
+.buttonPattern08{
+    position: relative;
+    @include button1($radius:115px,$p:1.2rem 3.5rem 1.3rem  1.6rem);
+    &:hover{
+        background: darken($theme_color, 10%);
+    }
+    &::after{
+        @include beforeAfter();
+        top:0;
+        right:4px;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        width: 0;
+        height: 0;
+        border:7px solid transparent;
+        border-left: 7px solid #fff;
+    }
+}
+.buttonPattern09{
+    @include button1($radius:0,$p:1.2rem 1.6rem 0.8rem);
+    box-shadow: 0px 5px 0px #25379B;
+    &:hover{
+        background: darken($theme_color, 10%);
+    }
+}

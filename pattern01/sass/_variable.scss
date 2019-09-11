@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import "../common/sass/_variable.scss";
+
+@mixin heading2{
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 1.625;
+}
+@mixin button1($minw:230px,$p:1.2rem 1.6rem 1.3rem,$bg:$theme_color,$radius:3px,$ta:left,$transition:background-color 0.2s){
+    display: inline-block;
+    max-width: 100%;
+    min-width: $minw;
+    padding: $p;
+    background: $bg;
+    border-radius: $radius;
+    text-align: $ta;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.625;
+    transition: $transition;
+}
+@mixin beforeAfter{
+    position: absolute;
+    content: "";
+}
