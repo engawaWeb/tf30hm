@@ -2,11 +2,15 @@
 //ファイルの読み込み
 @import "../common/sass/_variable.scss";
 
-.card{
+.oddOuter{
     background: #EFEFEF;
-    padding: 68px 15px 37px;
+    padding: 68px 15px 142px;
 }
-.card__heading01{
+.evenOuter{
+    background: #fff;
+    padding: 68px 15px 142px;
+}
+.idxHeading01{
     position: relative;
     line-height: 1.28;
     padding: 0 0 48px;
@@ -28,66 +32,172 @@
         background: $theme_blue;
     }
 }
-.card__container{
+.idxContainer{
     max-width: 100%;
-    .card__list{
-        max-width: 100%;
-        width: 1116px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        .card__list__item{
-            box-sizing: border-box;
-            max-width: 342px;;
-            width: calc(33.333% - 30px);
-            min-height: 355px;
-            padding: 16px;
-            margin:20px 15px 0 15px;
-            background: #FFFFFF;
-            @include mq(){
-                max-width: inherit;
-                width: calc(50% - 30px);
+}
+.card__list{
+    max-width: 100%;
+    width: 1116px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .card__list__item{
+        box-sizing: border-box;
+        max-width: 342px;;
+        width: calc(33.333% - 30px);
+        min-height: 355px;
+        padding: 16px;
+        margin:20px 15px 0 15px;
+        background: #FFFFFF;
+        @include mq(){
+            max-width: inherit;
+            width: calc(50% - 30px);
+        }
+        @include mq(sm){
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .card__list__item__img{
+            .card__list__item__img__link{
+                color: #FFFFFF;
+                transition: opacity 0.2s;
+                &:hover{
+                    opacity: 0.7;
+                }
             }
-            @include mq(sm){
+            img{
                 width: 100%;
-                margin-right: 0;
-                margin-left: 0;
             }
-            .card__list__item__img{
-                .card__list__item__img__link{
-                    color: #FFFFFF;
+        }
+        .card__list__item__dl{
+            .card__list__item__dt{
+                margin: 26px 0 0 0;
+                font-size: 2rem;
+                font-weight: bold;
+                line-height: 1.3;
+                color: $contents_color;
+                .card__list__item__dt__link{
+                    color: $contents_color;
                     transition: opacity 0.2s;
                     &:hover{
                         opacity: 0.7;
                     }
                 }
-                img{
-                    width: 100%;
+            }
+            .card__list__item__dd{
+                margin: 20px 0 0 0;
+                color: $contents_color;
+                font-weight: bold;
+                line-height: 1.525;
+            }
+        }
+    }
+}
+.news__list{
+    width: 838px;
+    max-width: 98%;
+    margin: auto;
+    padding:13px 0 0;
+    .news__list__item{
+        padding: 1.85rem 0 1.6rem 0;
+        border-top: 1px solid #707070;
+        &:first-child{
+            border-top: 0;
+        }
+        @include mq(){
+            padding: 2.05rem 0 1.55rem 0;
+        }
+        .news__list__item__dl{
+            display: flex;
+            align-items: flex-start;
+            @include mq(){
+                display: block;
+            }
+            .news__list__item__dt{
+                min-width:123px;
+                padding: 0.2rem 0.75rem 0 0.75rem;
+                @include mq(){
+                    display: block;
+                    padding: 0 0 0.75rem 0;
                 }
             }
-            .card__list__item__dl{
-                .card__list__item__dt{
-                    margin: 26px 0 0 0;
-                    font-size: 2rem;
+            .news__list__item__dd{
+                display: flex;
+                align-items: flex-start;
+                @include mq(){
+                    display: block;
+                    padding: 0;
+                }
+                .news__list__item__label{
+                    min-width: 100px;
+                    display: inline-block;
+                    background:$theme_blue;
+                    border-radius: 6px;
+                    color: #fff;
+                    padding: 0.3rem 0.3rem 0.2rem 0.3rem;
+                    margin:0 0.5rem 0 0;
+                    text-align: center;
                     font-weight: bold;
-                    line-height: 1.3;
-                    color: $contents_color;
-                    .card__list__item__dt__link{
-                        color: $contents_color;
-                        transition: opacity 0.2s;
+                    &.label-normal{
+                        background:#666666;
+                    }
+                    &.label-alert{
+                        background:#E81919;
+                    }
+                }
+                .news__list__item__text{
+                    max-width: 100%;
+                    padding: 0.2rem 0 0 2.5rem;
+                    @include mq(){
+                        display: block;
+                        padding: 0.5rem 0 0 0;
+                    }
+                    .news__list__item__text__link{
+                        color: #333333;
+                        border-bottom: transparent 1px solid;
+                        transition: 0.4s;
                         &:hover{
-                            opacity: 0.7;
+                            border-bottom: #333 1px solid;
                         }
                     }
                 }
-                .card__list__item__dd{
-                    margin: 20px 0 0 0;
-                    color: $contents_color;
-                    font-weight: bold;
-                    line-height: 1.525;
-                }
             }
+        }
+    }
+}
+.news__more{
+    margin-top: 1.7rem;
+    text-align: center;
+    &__link{
+        font-weight: bold;
+        display: inline-block;
+        color: #E81919;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            right:-1.5rem;
+            top:0.9rem;
+            display: block;
+            width: 1rem;
+            height: 0.3rem;
+            background: #E81919;
+            border-radius: 2px;
+            transform: rotate(45deg)
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            right:-1.5rem;
+            top:1.4rem;
+            display: block;
+            width: 1rem;
+            height: 0.3rem;
+            background: #E81919;
+            border-radius: 2px;
+            transform: rotate(-45deg)
         }
     }
 }

@@ -392,7 +392,7 @@ $mtop: 5;
     }
 }
 .buttonPattern09{
-    @include button1($radius:0,$p:1.2rem 1.6rem 0.8rem);
+    @include button1($radius:0,$p:1.2rem 3.5rem 0.8rem);
     box-shadow: 0px 5px 0px #25379B;
     &:hover{
         background: darken($theme_color, 10%);
