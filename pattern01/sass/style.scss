@@ -365,9 +365,8 @@ $mtop: 5;
     }
 }
 .buttonPattern07{
-    @include button1($minw:123px,$p:3.5rem 2.9rem 3.6rem,$radius:50%);
+    @include button1($w:123px,$p:3.5rem 2.9rem 3.6rem,$radius:50%);
     box-sizing: border-box;
-    width: 123px;
     &:hover{
         background: darken($theme_color, 10%);
     }
