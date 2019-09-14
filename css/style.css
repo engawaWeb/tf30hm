@@ -820,6 +820,7 @@
   border-bottom: 1px solid #333;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: #333;
 }
 
 .contact__inner .contact__form .contact__form__check + span .contact__form__check_link:hover {
