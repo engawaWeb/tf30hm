@@ -6,7 +6,7 @@
     font-size: 2.4rem;
     line-height: 1.625;
 }
-@mixin button1($minw:230px,$p:1.2rem 1.6rem 1.3rem,$bg:$theme_color,$radius:3px,$ta:left,$transition:background-color 0.2s){
+@mixin button1($w:230px,$p:1.2rem 1.6rem 1.3rem,$bg:$theme_color,$radius:3px,$ta:left,$transition:background-color 0.2s){
     display: inline-block;
     max-width: 100%;
     width: $w;

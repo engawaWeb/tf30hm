@@ -386,7 +386,7 @@ main {
 .buttonPattern01 {
   display: inline-block;
   max-width: 100%;
-  min-width: 230px;
+  width: 230px;
   padding: 1.2rem 1.6rem 1.3rem;
   background: #3F51B5;
   border-radius: 3px;
@@ -407,7 +407,7 @@ main {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  min-width: 230px;
+  width: 230px;
   padding: 1.2rem 3.5rem 1.3rem 1.6rem;
   background: #3F51B5;
   border-radius: 3px;
@@ -441,7 +441,7 @@ main {
 .buttonPattern03 {
   display: inline-block;
   max-width: 100%;
-  min-width: 230px;
+  width: 230px;
   padding: 1.2rem 3.5rem 1.3rem 1.6rem;
   background: #3F51B5;
   border-radius: 3px;
@@ -483,7 +483,7 @@ main {
 .buttonPattern04 {
   display: inline-block;
   max-width: 100%;
-  min-width: 230px;
+  width: 230px;
   padding: 1.2rem 3.5rem 1.3rem;
   background: #3F51B5;
   border-radius: 3px;
@@ -506,7 +506,7 @@ main {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  min-width: 230px;
+  width: 230px;
   padding: 1.2rem 3.5rem 1.3rem;
   background: transparent;
   border-radius: 3px;
@@ -561,7 +561,7 @@ main {
 .buttonPattern06 {
   display: inline-block;
   max-width: 100%;
-  min-width: 230px;
+  width: 230px;
   padding: 1.2rem 3.5rem 1.3rem;
   background: #333;
   border-radius: 0;
@@ -584,7 +584,7 @@ main {
 .buttonPattern07 {
   display: inline-block;
   max-width: 100%;
-  min-width: 123px;
+  width: 123px;
   padding: 3.5rem 2.9rem 3.6rem;
   background: #3F51B5;
   border-radius: 50%;
@@ -597,7 +597,6 @@ main {
   transition: background-color 0.2s;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 123px;
 }
 
 .buttonPattern07:hover {
@@ -608,7 +607,7 @@ main {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  min-width: 230px;
+  width: 230px;
   padding: 1.2rem 3.5rem 1.3rem 1.6rem;
   background: #3F51B5;
   border-radius: 115px;
@@ -642,7 +641,7 @@ main {
 .buttonPattern09 {
   display: inline-block;
   max-width: 100%;
-  min-width: 230px;
+  width: 230px;
   padding: 1.2rem 3.5rem 0.8rem;
   background: #3F51B5;
   border-radius: 0;
