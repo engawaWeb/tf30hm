@@ -630,7 +630,7 @@
   -webkit-appearance: none;
   appearance: none;
   background: transparent url(https://haniwaman.com/wp-content/uploads/2018/12/form-css-arrow.png) no-repeat center right 8px/16px 16px;
-  border: 1px solid rgba(0, 0, 0, 0.16);
+  border: 1px solid #707070;
   border-radius: 0;
   color: inherit;
   cursor: pointer;
@@ -658,7 +658,7 @@
   appearance: none;
   background-color: transparent;
   background-image: none;
-  border: 1px solid rgba(0, 0, 0, 0.16);
+  border: 1px solid #707070;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
@@ -705,7 +705,7 @@
   appearance: none;
   background-color: transparent;
   background-image: none;
-  border: 1px solid rgba(0, 0, 0, 0.16);
+  border: 1px solid #707070;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
@@ -770,7 +770,7 @@
 .contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__radio + span::before {
   -webkit-transform: translateY(-50%);
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.16);
+  border: 1px solid #707070;
   border-radius: 50%;
   content: "";
   display: block;
@@ -830,8 +830,7 @@
 .contact__inner .contact__form .contact__form__check + span::before {
   -webkit-transform: translateY(-50%);
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.16);
-  border-radius: 2px;
+  border: 1px solid #707070;
   content: "";
   display: block;
   height: 3rem;
