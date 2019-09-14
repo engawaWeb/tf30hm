@@ -583,7 +583,7 @@
 }
 
 .contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__property {
-  margin: 0.5em 0 0;
+  margin: 1.7rem 0 0;
   width: 177px;
   max-width: 100%;
   font-size: 1.8rem;
@@ -636,8 +636,9 @@
   cursor: pointer;
   font-family: inherit;
   font-size: 1em;
-  padding: 0.4em 0.8em;
+  padding: 1.7rem 0.8em;
   width: 100%;
+  color: #ccc;
 }
 
 .contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > select::-ms-expand {
@@ -662,8 +663,9 @@
   color: inherit;
   font-family: inherit;
   font-size: 1em;
-  padding: 0.4em 0.8em;
+  padding: 1.7rem 0.8em;
   width: 100%;
+  /* IE */
 }
 
 .contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > input:focus {
@@ -671,6 +673,30 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: none;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > input::-webkit-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > input::-moz-placeholder {
+  color: #CCCCCC;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > input:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > input::-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > input::placeholder {
+  color: #CCCCCC;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > input:-ms-input-placeholder {
+  color: #CCCCCC;
 }
 
 .contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > textarea {
@@ -687,6 +713,7 @@
   height: 240px;
   padding: 0.4em 0.8em;
   width: 100%;
+  /* IE */
 }
 
 .contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > textarea:focus {
@@ -694,6 +721,30 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: none;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > textarea::-webkit-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > textarea::-moz-placeholder {
+  color: #CCCCCC;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > textarea:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > textarea::-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > textarea::placeholder {
+  color: #CCCCCC;
+}
+
+.contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value > textarea:-ms-input-placeholder {
+  color: #CCCCCC;
 }
 
 @media screen and (max-width: 959px) {

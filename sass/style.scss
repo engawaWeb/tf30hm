@@ -407,7 +407,7 @@ $mtop: 5;
                     display: block;
                 }
                 .contact__form__property{
-                    margin: 0.5em 0 0;
+                    margin: 1.7rem 0 0;
                     width:177px;
                     max-width: 100%;
                     font-size:1.8rem;
@@ -447,8 +447,9 @@ $mtop: 5;
                         cursor: pointer;
                         font-family: inherit;
                         font-size: 1em;
-                        padding: 0.4em 0.8em;
+                        padding: 1.7rem 0.8em;
                         width: 100%;
+                        color: #ccc;
                         &::-ms-expand{
                             display: none;
                         }
@@ -469,13 +470,21 @@ $mtop: 5;
                         color: inherit;
                         font-family: inherit;
                         font-size: 1em;
-                        padding: 0.4em 0.8em;
+                        padding: 1.7rem 0.8em;
                         width: 100%;
                         &:focus{
                             border: 1px solid rgba(0, 0, 0, 0.32);
                             box-shadow: none;
                             outline: none;
                         }
+                        &::placeholder {
+                            color: #CCCCCC;
+                          }
+                          
+                          /* IE */
+                          &:-ms-input-placeholder {
+                            color: #CCCCCC;
+                          }
                     }
                     &> textarea{
                         -moz-appearance: none;
@@ -496,6 +505,14 @@ $mtop: 5;
                             box-shadow: none;
                             outline: none;
                         }
+                        &::placeholder {
+                            color: #CCCCCC;
+                          }
+                          
+                          /* IE */
+                          &:-ms-input-placeholder {
+                            color: #CCCCCC;
+                          }
                     }
                 }
                 label{
