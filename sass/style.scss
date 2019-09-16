@@ -194,6 +194,10 @@ $mtop: 5;
         display: inline-block;
         color: #E81919;
         position: relative;
+        transition: opacity 0.3s;
+        &:hover{
+            opacity: 0.7;
+        }
         &::before{
             content: "";
             position: absolute;

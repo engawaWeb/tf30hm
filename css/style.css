@@ -287,6 +287,12 @@
   display: inline-block;
   color: #E81919;
   position: relative;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.news__more__link:hover {
+  opacity: 0.7;
 }
 
 .news__more__link::before {
