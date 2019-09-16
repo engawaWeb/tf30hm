@@ -270,16 +270,10 @@ $mtop: 5;
 }
 .buttonPattern01{
     @include button1();
-    &:hover{
-        background: darken($theme_color, 10%);
-    }
 }
 .buttonPattern02{
     position: relative;
     @include button1($p:1.2rem 3.5rem 1.3rem  1.6rem);
-    &:hover{
-        background: darken($theme_color, 10%);
-    }
     &::after{
         @include beforeAfter();
         top:0;
@@ -295,9 +289,6 @@ $mtop: 5;
 }
 .buttonPattern03{
     @include button1($p:1.2rem 3.5rem 1.3rem  1.6rem);
-    &:hover{
-        background: darken($theme_color, 10%);
-    }
     .text{
         position: relative;
         display: inline-block;
@@ -320,9 +311,6 @@ $mtop: 5;
 .buttonPattern04{
     @include button1($p:1.2rem 3.5rem 1.3rem);
     box-shadow: 0px 5px 0px #25379B;
-    &:hover{
-        background: darken($theme_color, 10%);
-    }
 }
 .buttonPattern05{
     position: relative;
@@ -360,23 +348,14 @@ $mtop: 5;
     @include button1($p:1.2rem 3.5rem 1.3rem,$bg:#333,$radius:0);
     box-sizing: border-box;
     border: 2px solid #FFFFFF;
-    &:hover{
-        background: darken($theme_color, 10%);
-    }
 }
 .buttonPattern07{
     @include button1($w:123px,$p:3.5rem 2.9rem 3.6rem,$radius:50%);
     box-sizing: border-box;
-    &:hover{
-        background: darken($theme_color, 10%);
-    }
 }
 .buttonPattern08{
     position: relative;
     @include button1($radius:115px,$p:1.2rem 3.5rem 1.3rem  1.6rem);
-    &:hover{
-        background: darken($theme_color, 10%);
-    }
     &::after{
         @include beforeAfter();
         top:0;
@@ -393,7 +372,67 @@ $mtop: 5;
 .buttonPattern09{
     @include button1($radius:0,$p:1.2rem 3.5rem 0.8rem);
     box-shadow: 0px 5px 0px #25379B;
+}
+
+.bpToggle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cleary{
+    transition: all 0.3s;
     &:hover{
-        background: darken($theme_color, 10%);
+        opacity:0.7;
+    }
+}
+.inversion{
+    transition: all 0.3s;
+    &:hover{
+        background: invert($theme_color)
+    }
+}
+.dent{
+    box-shadow: 0px 5px 0px #25379B;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow:none;
+        transform: translateY(5px);
+    }
+}
+.flowShadow{
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+        transform: translateY(-5px);
+    }
+}
+.xRoll{
+    transition: all 1s linear 0s;
+    &:hover{
+        transform:rotateX(360deg);
+    }
+}
+.yRoll{
+    transition: all 1s linear 0s;
+    &:hover{
+        transform:rotateY(360deg);
+    }
+}
+.clockwise{
+    transition: all 1s linear 0s;
+    &:hover{
+        transform:rotateZ(360deg);
+    }
+}
+.expansion{
+    transition: all 0.6s linear 0s;
+    &:hover{
+        transform:scale(1.1,1.1);
+    }
+}
+.colorChange{
+    transition: all 0.3s;
+    &:hover{
+        background: darken($theme_color,10%);
     }
 }

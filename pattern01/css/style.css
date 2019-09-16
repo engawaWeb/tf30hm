@@ -399,10 +399,6 @@ main {
   transition: background-color 0.2s;
 }
 
-.buttonPattern01:hover {
-  background: #32408f;
-}
-
 .buttonPattern02 {
   position: relative;
   display: inline-block;
@@ -418,10 +414,6 @@ main {
   line-height: 1.625;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
-}
-
-.buttonPattern02:hover {
-  background: #32408f;
 }
 
 .buttonPattern02::after {
@@ -452,10 +444,6 @@ main {
   line-height: 1.625;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
-}
-
-.buttonPattern03:hover {
-  background: #32408f;
 }
 
 .buttonPattern03 .text {
@@ -496,10 +484,6 @@ main {
   transition: background-color 0.2s;
   -webkit-box-shadow: 0px 5px 0px #25379B;
   box-shadow: 0px 5px 0px #25379B;
-}
-
-.buttonPattern04:hover {
-  background: #32408f;
 }
 
 .buttonPattern05 {
@@ -577,10 +561,6 @@ main {
   border: 2px solid #FFFFFF;
 }
 
-.buttonPattern06:hover {
-  background: #32408f;
-}
-
 .buttonPattern07 {
   display: inline-block;
   max-width: 100%;
@@ -599,10 +579,6 @@ main {
   box-sizing: border-box;
 }
 
-.buttonPattern07:hover {
-  background: #32408f;
-}
-
 .buttonPattern08 {
   position: relative;
   display: inline-block;
@@ -618,10 +594,6 @@ main {
   line-height: 1.625;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
-}
-
-.buttonPattern08:hover {
-  background: #32408f;
 }
 
 .buttonPattern08::after {
@@ -656,6 +628,106 @@ main {
   box-shadow: 0px 5px 0px #25379B;
 }
 
-.buttonPattern09:hover {
+.bpToggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.cleary {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cleary:hover {
+  opacity: 0.7;
+}
+
+.inversion {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.inversion:hover {
+  background: #c0ae4a;
+}
+
+.dent {
+  -webkit-box-shadow: 0px 5px 0px #25379B;
+  box-shadow: 0px 5px 0px #25379B;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.dent:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+.flowShadow {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.flowShadow:hover {
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.xRoll {
+  -webkit-transition: all 1s linear 0s;
+  transition: all 1s linear 0s;
+}
+
+.xRoll:hover {
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.yRoll {
+  -webkit-transition: all 1s linear 0s;
+  transition: all 1s linear 0s;
+}
+
+.yRoll:hover {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.clockwise {
+  -webkit-transition: all 1s linear 0s;
+  transition: all 1s linear 0s;
+}
+
+.clockwise:hover {
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
+.expansion {
+  -webkit-transition: all 0.6s linear 0s;
+  transition: all 0.6s linear 0s;
+}
+
+.expansion:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.colorChange {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.colorChange:hover {
   background: #32408f;
 }

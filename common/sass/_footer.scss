@@ -1,0 +1,161 @@
+@import "./_variable.scss";
+
+footer{
+    background: transparent linear-gradient(180deg, #666666 0%, #333333 100%) 0% 0% no-repeat padding-box;
+    padding: 74px 20px 32px;
+    .footerInner{
+        width: 923px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @include mq(){
+            display: block;
+        }
+    }
+    .footer_address{
+        width: 240px;
+        max-width: 100%;
+        @include mq(){
+            margin: auto;
+        }
+        .footer_address_dl{
+            margin: 30px 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            .footer_address_dt{
+                color: #fff;
+                width:3em;
+                max-width: 100%;
+            }
+            .footer_address_dd{
+                color: #fff;
+                width:calc(100% - 3em);
+            }
+        }
+    }
+    .footer_nav{
+        width: 400px;
+        max-width: 100%;
+        @include mq(){
+            margin: 3rem auto 0;
+        }
+        nav .footer_nav_list{
+            display: flex;
+            justify-content: flex-start;
+            @include mq(){
+                flex-direction: column;
+                align-items: center;
+            }
+            &_item{
+                margin: 0 0 0 30px;
+                @include mq(){
+                    margin: 0;
+                }    
+                &:first-child{
+                    margin: 0;
+                }
+                a{
+                    color: #fff;
+                    transition: opacity 0.3s;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+    .footer_sns{
+        width: 140px;
+        max-width: 100%;
+        @include mq(){
+            margin: 3rem auto 0;
+        }
+        .footer_sns_list{
+            display: flex;
+            justify-content: flex-start;
+            &_item{
+                margin:0 16px 0 0;
+                &_icon{
+                    display: block;
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 15px;
+                    transition: all 1s linear 0s;
+                    &:hover{
+                        transform: rotateY(360deg);
+                    }
+                    &.twitter{
+                        background: #55ACEE;
+                    }
+                    &.facebook{
+                        background: #3B5998;
+                    }
+                    &.pocket{
+                        background: #D93177;
+                    }    
+                }
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        margin: 87px 0 0 0;
+        small{
+            color: #fff;
+            font-size: 1.4rem;
+        }
+    }
+    .pagetop{
+        position: fixed;
+        bottom: 14px;
+        right:19px;
+        a{
+            position: relative;
+            display: block;
+            background: #3843A9;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 60px;
+            height: 60px;
+            transition: all 0.3s;
+            &::before {
+                position: absolute;
+                content: "";
+                left:  14px;
+                top: 0;
+                bottom:0;
+                margin: auto;
+                display: block;
+                width: 20px;
+                height: 5px;
+                background: #fff;
+                border-radius: 3px;
+                transform: rotate(-45deg);
+                z-index:1;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                right: 14px;
+                top: 0;
+                bottom:0;
+                margin: auto;
+                display: block;
+                width: 20px;
+                height: 5px;
+                background: #fff;
+                border-radius: 3px;
+                transform: rotate(-135deg);
+                z-index:1;
+            }
+            &:hover{
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
