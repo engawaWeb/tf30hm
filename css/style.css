@@ -826,6 +826,7 @@
   margin: 0 0.2em 0;
   padding: 0 0 0 5.2rem;
   position: relative;
+  text-align: left;
 }
 
 .contact__inner .contact__form .contact__form__check + span .contact__form__check_link {
@@ -931,7 +932,7 @@
   border-radius: 12px;
   text-align: center;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   line-height: 1.625;
   -webkit-transition: background-color 0.2s;
   -webkit-transition: opacity 0.3s;
