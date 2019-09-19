@@ -69,10 +69,15 @@ header{
 }
 .mv{
     padding: 98px 0 0;
-    background: url(../img/mainvisual.png) no-repeat center bottom;
     @include mq(sm){
         padding-top: calc(39px + 2%);
-        background-position: top;
+    }
+    .readbox__container{
+        position: relative;
+        background: url(../img/mainvisual.png) no-repeat center bottom;
+        @include mq(sm){
+            background-position: top;
+        }
     }
     .readbox{
         position:relative;
@@ -84,7 +89,7 @@ header{
         padding: 150px 0 138px;
         text-align: center;
         @include mq(sm){
-            padding: 10% 0 10%;
+            padding: 20% 0 20%;
         }
         .readbox__heading01{
             line-height: 1.28;
@@ -137,6 +142,93 @@ header{
                 display: inline-block;
                 text-align: left;
             }
+        }
+    }
+}
+
+
+.swiper-container {
+    width: 1366px;
+    max-width: 100%;
+}
+.swiper-custom-pagination-bullets{
+    margin: 0 6px;
+    .swiper-pagination-bullet{
+        width: 16px;
+        height: 16px;
+        background: #E9EEF0;
+        opacity: 1;
+        &-active{
+            background: #2F7DC8;
+        }
+    }
+}
+
+
+
+.swiper-custom-button{
+    background-image: none !important;
+    background: #FFFFFF;
+    width: 75px !important;
+    height: 75px !important;
+    border-radius: 38px;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    line-height: 64px;
+    @include mq(sm){
+        display: none;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        right: 24px;
+        top: 27px;
+        display: block;
+        width: 25px;
+        height: 6px;
+        background: #656565;
+        border-radius: 3px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        right: 24px;
+        top: 41px;
+        display: block;
+        width: 25px;
+        height: 6px;
+        background: #656565;
+        border-radius: 3px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    &.swiper-button-prev{
+        right: auto;
+        left: 11.42%;
+        @include mq(){
+            right: auto;
+            left: 10px;
+        }
+        &::before{
+            right: 24px;
+            top: 41px;
+            transform: rotate(45deg);
+        }
+        &::after{
+            right: 24px;
+            top: 27px;
+            transform: rotate(-45deg);
+        }
+    }
+    &.swiper-button-next{
+        right: auto;
+        left: 82.87%;
+        @include mq(){
+            right: 10px;
+            left: auto;
         }
     }
 }
