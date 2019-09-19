@@ -49,7 +49,7 @@
 
 .evenOuter {
   background: #fff;
-  padding: 68px 15px 142px;
+  padding: 68px 15px 87px;
 }
 
 .idxHeading01 {
@@ -512,7 +512,7 @@
   display: inline-block;
   max-width: 100%;
   width: 305px;
-  padding: 1.5rem 3.5rem 1.5rem 1.6rem;
+  padding: 1.3rem 3.5rem 1.1rem 3.5rem;
   background: #3F51B5;
   border-radius: 12px;
   text-align: center;
@@ -524,6 +524,7 @@
   transition: opacity 0.3s;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 2rem;
 }
 
 .buttonPattern02:hover {
@@ -568,7 +569,7 @@
   width: 800px;
   max-width: 100%;
   margin: auto;
-  padding: 5.2rem;
+  padding: 2.3rem 4.3rem 3.8rem 5.2rem;
   background: #fff;
 }
 
@@ -585,7 +586,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 4.8rem 0 0 0;
+  margin: 3.4rem 0 0 0;
 }
 
 @media screen and (max-width: 959px) {
@@ -604,17 +605,20 @@
 @media screen and (max-width: 959px) {
   .contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__property {
     margin: 0 0 1rem;
+    width: auto;
   }
 }
 
 .contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__property .contact__form__property__icon {
   display: block;
-  width: 2.8em;
+  width: 4.4rem;
   font-size: 1.4rem;
-  padding: 0 0.5rem;
+  margin: 0.4rem 0.3rem 0.3rem 0.5rem;
+  padding: 0 0.2rem 0.1rem;
   border-radius: 10px;
   background: #E81919;
   color: #fff;
+  text-align: center;
 }
 
 @media screen and (max-width: 959px) {
@@ -625,7 +629,6 @@
 }
 
 .contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__value {
-  margin: 0 0 0 1rem;
   width: 528px;
   max-width: 100%;
 }
@@ -641,7 +644,7 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background: transparent url(https://haniwaman.com/wp-content/uploads/2018/12/form-css-arrow.png) no-repeat center right 8px/16px 16px;
+  background: transparent url(https://haniwaman.com/wp-content/uploads/2018/12/form-css-arrow.png) no-repeat center right 21px/16px 16px;
   border: 1px solid #707070;
   border-radius: 0;
   color: inherit;
@@ -675,7 +678,7 @@
   color: inherit;
   font-family: inherit;
   font-size: 1em;
-  padding: 1.7rem 0.8em;
+  padding: 2rem 0.8em;
   width: 100%;
   /* IE */
 }
@@ -773,7 +776,7 @@
 .contact__inner .contact__form .contact__form__list .contact__form__list__item .contact__form__radio + span {
   cursor: pointer;
   display: inline-block;
-  margin: 0 2rem 0 0;
+  margin: 0 3.5rem 0 0;
   padding: 0 0 0 4rem;
   position: relative;
   color: #333;
@@ -927,7 +930,7 @@
   position: relative;
   max-width: 100%;
   width: 261px;
-  padding: 1.5rem 3.5rem 1.5rem 1.6rem;
+  padding: 1.2rem 1.3rem 0.9rem 1.3rem;
   background: #3F51B5;
   border-radius: 12px;
   text-align: center;
