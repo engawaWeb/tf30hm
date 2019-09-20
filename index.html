@@ -7,10 +7,11 @@
     <meta name="description" content="ここにdescriptionを記入します。">
     <meta name="keywords" content="ここにkeywordを記入します,keywordはSEOでの重要度が少なくなりました">
     <title>TF30CO</title>
+    <link href="common/css/reset.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link href="common/css/reset.css" rel="stylesheet">
     <link href="common/css/common.css" rel="stylesheet">
+    <link href="common/css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -43,7 +44,7 @@
                                     <div class="readbox">
                                         <h1 class="readbox__heading01"><span class="readbox__heading01__span">一番伝えたいことを書く</span></h1>
                                         <p class="readbox__readtext"><span class="readbox__readtext__span">リードリードリード</span></p>
-                                        <a href="#" class="readbox__btn">
+                                        <a href="#" class="readbox__btn wow bounceIn" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="1">
                                             <p class="readbox__btn__text">お問い合わせ</p>
                                         </a>
                                     </div><!-- /.readbox -->
@@ -105,12 +106,12 @@
             </div><!-- /.mv -->
 
             <main>
-                <section>
+                <section class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="1">
                     <div id="card" class="oddOuter">
                         <h2 class="idxHeading01">Card</h2>
                         <div class="idxContainer">
                             <div class="idxInner">
-                                <ul class="card__list">
+                                <ul class="card__list wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="1">
                                     <li class="card__list__item">
                                         <p class="card__list__item__img"><a href="#" class="card__list__item__img__link"><img src="img/card-img.png"
                                                     srcset="img/card-img.png 1x,img/card-img@2x.png 2x" alt=""></a></p>
@@ -165,12 +166,12 @@
                     </div><!-- /#card -->
                 </section>
 
-                <section>
+                <section class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="1">
                     <div id="news" class="evenOuter">
                         <h2 class="idxHeading01">News</h2>
                         <div class="idxContainer">
                             <div class="idxInner">
-                                <ul class="news__list">
+                                <ul class="news__list wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="1">
                                     <li class="news__list__item">
                                         <dl class="news__list__item__dl">
                                             <dt class="news__list__item__dt">
@@ -238,7 +239,7 @@
                     </div><!-- /#news -->
                 </section>
 
-                <section>
+                <section class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="1">
                     <div id="price" class="oddOuter">
                         <h2 class="idxHeading01">Price</h2>
                         <div class="idxContainer">
@@ -246,7 +247,7 @@
                                 <div class="topicFeature">
                                     <p class="topicFeature__image"><img src="img/price-img.png" srcset="img/price-img.png 1x,img/price-img@2x.png 2x" alt=""></p>
                                     <div class="topicFeature__tableWrap">
-                                        <table class="topicFeature__table">
+                                        <table class="topicFeature__table wow jello" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="1">
                                             <caption>
                                                 <ul class="topicFeature__table__caption__list">
                                                     <li class="topicFeature__table__caption__list__item"><span class="topicFeature__table__caption__list__item__caution">※</span><span class="topicFeature__table__caption__list__item__text">目安なので詳しくは<a href="#" class="topicFeature__table__caption__list__item__link">お問い合わせ</a>ください。</span></li>
@@ -287,7 +288,8 @@
                         </div><!-- /.idxContainer -->
                     </div><!-- /#price -->
                 </section>
-                <section>
+
+                <section class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="1">
                     <div id="access" class="evenOuter">
                         <h2 class="idxHeading01">Access</h2>
                         <div class="idxContainer">
@@ -311,7 +313,7 @@
                                         </div><!-- /.map__detail -->
                                     </div><!-- /.map__inner -->
                                     <div class="center mt5">
-                                        <a href="#" class="buttonPattern02">Googleマップで見る</a>
+                                        <a href="#" class="buttonPattern02 wow tada" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="5">Googleマップで見る</a>
                                     </div>
                                 </div><!-- /.map -->
                             </div><!-- /.idxInner -->
@@ -319,7 +321,7 @@
                     </div><!-- /#access -->
                 </section>
 
-                <section>
+                <section class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="1">
                     <div id="contact" class="oddOuter">
                         <h2 class="idxHeading01">Contact</h2>
                         <div class="idxContainer">
@@ -423,6 +425,7 @@
     </div><!-- /.wrap -->
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="common/js/wow.min.js"></script>
     <script>
         var mySwiper = new Swiper ('.swiper-container', {
             // Optional parameters
@@ -441,6 +444,9 @@
             prevEl: '.swiper-button-prev',
             },
         })
+
+        //wow.js
+        new WOW().init();
     </script>
 </body>
 </html>
