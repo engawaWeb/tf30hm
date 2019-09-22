@@ -20,7 +20,9 @@ header{
         flex-wrap: wrap;
         padding: 30px 0;
         @include mq(sm){
-            justify-content: center;
+            box-sizing: border-box;
+            height:60px;
+            justify-content: flex-start;
             padding: 1% 2%;
         }
         .logo{
@@ -32,21 +34,36 @@ header{
         }
         .global-nav{
             @include mq(sm){
-                display: none;
+                display: block;
             }
             .global-nav__list{
                 display: flex;
                 flex-wrap: wrap;
-                margin: 0 5px 0 0;
+                @include mq(sm){
+                    display: block;
+                    margin: 0;
+                }
                 &>.global-nav__list__item{
                     margin: 0 0 0 30px;
+                    @include mq(sm){
+                        border-bottom: 1px dotted #333;
+                        margin: 0;
+                    }
                     &:first-child{
                         margin: 0;
+                        @include mq(sm){
+                            margin: 0;
+                        }
                     }
                     &>a{
                         color:#FFFFFF;
                         position: relative;
                         display: inline-block;
+                        @include mq(sm){
+                            color: #707070;
+                            display: block;
+                            padding: 15px 20px;
+                        }
                         &::after{
                             position: absolute;
                             content: '';
@@ -56,9 +73,36 @@ header{
                             height: 3px;
                             background: #E81919;
                             transition: all 0.3s ;
+                            @include mq(sm){
+                                bottom: 22px;
+                                left: auto;
+                                right: 15px;
+                                width: 12px;
+                                height: 4px;
+                                background: #707070;
+                                border-radius: 2px;
+                                transform: rotate(-45deg);
+                            }
+                        }
+                        @include mq(sm){
+                            &::before{
+                                position: absolute;
+                                content: '';
+                                top: 23px;
+                                right: 15px;
+                                width: 12px;
+                                height: 4px;
+                                background: #707070;
+                                transition: all 0.3s ;
+                                border-radius: 2px;
+                                transform: rotate(45deg);
+                            }
                         }
                         &:hover::after{
                             width: 100%;
+                            @include mq(sm){
+                                width: 12px;
+                            }
                         }
 
                     }

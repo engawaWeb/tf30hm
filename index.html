@@ -10,17 +10,56 @@
     <link href="common/css/reset.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./common/css/hiraku.css">
     <link href="common/css/common.css" rel="stylesheet">
     <link href="common/css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./common/js/hiraku.js"></script>
+    <style>
+        #header {
+            background: #666;
+            height: 62px;
+            position: fixed;
+            width: 100%;
+            padding: 8px;
+        }
+        .hiraku-open-btn {
+            display: none;
+        }
+        @media screen and (max-width: 559px) {
+            .hiraku-open-btn {
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 2%;
+                transform: translateY(-50%);
+            }
+            .global-nav.pc{
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="wrap">
         <div class="wrap-inner">
             <header>
+                <button class="hiraku-open-btn" id="offcanvas-btn-left" data-toggle-offcanvas="#js-hiraku-offcanvas-1">
+                    <span class="hiraku-open-btn-line"></span>
+                </button>
                 <div class="inner">
                     <div class="logo"><img src="common/img/logo.png" srcset="common/img/logo.png 1x, common/img/logo@2x.png 2x" alt="The Conmpany"></div>
-                    <nav class="global-nav">
+                    <nav class="global-nav offcanvas-left">
+                        <ul class="global-nav__list">
+                            <li class="global-nav__list__item"><a href="#card">Card</a></li>
+                            <li class="global-nav__list__item"><a href="#news">News</a></li>
+                            <li class="global-nav__list__item"><a href="#price">Price</a></li>
+                            <li class="global-nav__list__item"><a href="#access">Access</a></li>
+                            <li class="global-nav__list__item"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="global-nav pc">
                         <ul class="global-nav__list">
                             <li class="global-nav__list__item"><a href="#card">Card</a></li>
                             <li class="global-nav__list__item"><a href="#news">News</a></li>
@@ -427,6 +466,7 @@
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="common/js/wow.min.js"></script>
     <script>
+        //swiper.js
         var mySwiper = new Swiper ('.swiper-container', {
             // Optional parameters
             direction: 'horizontal',
@@ -447,6 +487,12 @@
 
         //wow.js
         new WOW().init();
+
+        //hiraku.js
+        $(".offcanvas-left").hiraku({
+            btn: "#offcanvas-btn-left",
+            direction: "right"
+        });
     </script>
 </body>
 </html>

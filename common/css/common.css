@@ -68,9 +68,12 @@ header .inner {
 
 @media screen and (max-width: 559px) {
   header .inner {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 60px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     padding: 1% 2%;
   }
 }
@@ -88,7 +91,7 @@ header .inner .logo {
 
 @media screen and (max-width: 559px) {
   header .inner .global-nav {
-    display: none;
+    display: block;
   }
 }
 
@@ -98,21 +101,48 @@ header .inner .global-nav .global-nav__list {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 5px 0 0;
+}
+
+@media screen and (max-width: 559px) {
+  header .inner .global-nav .global-nav__list {
+    display: block;
+    margin: 0;
+  }
 }
 
 header .inner .global-nav .global-nav__list > .global-nav__list__item {
   margin: 0 0 0 30px;
 }
 
+@media screen and (max-width: 559px) {
+  header .inner .global-nav .global-nav__list > .global-nav__list__item {
+    border-bottom: 1px dotted #333;
+    margin: 0;
+  }
+}
+
 header .inner .global-nav .global-nav__list > .global-nav__list__item:first-child {
   margin: 0;
+}
+
+@media screen and (max-width: 559px) {
+  header .inner .global-nav .global-nav__list > .global-nav__list__item:first-child {
+    margin: 0;
+  }
 }
 
 header .inner .global-nav .global-nav__list > .global-nav__list__item > a {
   color: #FFFFFF;
   position: relative;
   display: inline-block;
+}
+
+@media screen and (max-width: 559px) {
+  header .inner .global-nav .global-nav__list > .global-nav__list__item > a {
+    color: #707070;
+    display: block;
+    padding: 15px 20px;
+  }
 }
 
 header .inner .global-nav .global-nav__list > .global-nav__list__item > a::after {
@@ -127,8 +157,45 @@ header .inner .global-nav .global-nav__list > .global-nav__list__item > a::after
   transition: all 0.3s;
 }
 
+@media screen and (max-width: 559px) {
+  header .inner .global-nav .global-nav__list > .global-nav__list__item > a::after {
+    bottom: 22px;
+    left: auto;
+    right: 15px;
+    width: 12px;
+    height: 4px;
+    background: #707070;
+    border-radius: 2px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 559px) {
+  header .inner .global-nav .global-nav__list > .global-nav__list__item > a::before {
+    position: absolute;
+    content: '';
+    top: 23px;
+    right: 15px;
+    width: 12px;
+    height: 4px;
+    background: #707070;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 2px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
 header .inner .global-nav .global-nav__list > .global-nav__list__item > a:hover::after {
   width: 100%;
+}
+
+@media screen and (max-width: 559px) {
+  header .inner .global-nav .global-nav__list > .global-nav__list__item > a:hover::after {
+    width: 12px;
+  }
 }
 
 .mv {
