@@ -74,7 +74,7 @@ header .inner {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    padding: 1% 2%;
+    padding: 15px 16px 16px;
   }
 }
 
@@ -86,6 +86,7 @@ header .inner .logo {
 @media screen and (max-width: 559px) {
   header .inner .logo {
     margin-right: 0;
+    width: 147px;
   }
 }
 

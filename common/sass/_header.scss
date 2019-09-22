@@ -23,13 +23,14 @@ header{
             box-sizing: border-box;
             height:60px;
             justify-content: flex-start;
-            padding: 1% 2%;
+            padding: 15px 16px 16px;
         }
         .logo{
             margin-right: 20px;
             width: 200px;
             @include mq(sm){
                 margin-right: 0;
+                width: 147px;
             }
         }
         .global-nav{
