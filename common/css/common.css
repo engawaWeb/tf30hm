@@ -600,6 +600,7 @@ footer .copyright small {
 }
 
 footer .pagetop {
+  display: none;
   position: fixed;
   bottom: 14px;
   right: 19px;
