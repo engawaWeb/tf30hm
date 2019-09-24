@@ -105,13 +105,19 @@ header{
                                 width: 12px;
                             }
                         }
-
                     }
                 }
             }
         }
     }
 }
+
+.gnavBorder{
+    &.active::after{
+        width: 100% !important;
+    }
+}
+
 .mv{
     padding: 98px 0 0;
     @include mq(sm){

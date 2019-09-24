@@ -199,6 +199,10 @@ header .inner .global-nav .global-nav__list > .global-nav__list__item > a:hover:
   }
 }
 
+.gnavBorder.active::after {
+  width: 100% !important;
+}
+
 .mv {
   padding: 98px 0 0;
 }

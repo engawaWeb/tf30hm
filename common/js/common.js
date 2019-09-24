@@ -22,4 +22,10 @@ $(function(){
 
         $('html,body').animate({'scrollTop': position},'slow');
     });
+
+    //グローバルメニュー　クリックした要素に下線を引く
+    $('.gnavBorder').on('click',function(){
+        $('.gnavBorder').removeClass('active');
+        $(this).addClass('active');
+    });
 });
