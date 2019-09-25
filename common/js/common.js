@@ -17,8 +17,8 @@ $(function(){
     //各要素へリンク　スムーススクロール
     $('.scroll-btn').on('click',function(event){
         event.preventDefault();
-        var id = $(this).attr('href');
-        var position = $(id).offset().top;
+        let id = $(this).attr('href');
+        let position = $(id).offset().top;
 
         $('html,body').animate({'scrollTop': position},'slow');
     });
@@ -27,5 +27,17 @@ $(function(){
     $('.gnavBorder').on('click',function(){
         $('.gnavBorder').removeClass('active');
         $(this).addClass('active');
+    });
+
+    //アコーディオン
+    $('.qa__list__item > dl > dt').on('click',function(){
+        let $dd = $(this).next();
+        if($(this).hasClass('open')){
+            $(this).removeClass('open');
+            $dd.slideUp();
+        }else{
+            $(this).addClass('open');
+            $dd.slideDown();
+        }
     });
 });
