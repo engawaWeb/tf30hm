@@ -404,6 +404,11 @@ $mtop: 5;
     color: #FFFFFF;
     position: relative;
     display: flex;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        opacity: .7;
+    }
     &::before{
     @include beforeAfter();
         right:1.6rem;
@@ -577,6 +582,7 @@ $mtop: 5;
                         height: 240px;
                         padding: 0.4em 0.8em;
                         width: 100%;
+                        max-width: 100%;
                         &:focus{
                             border: 1px solid rgba(0, 0, 0, 0.32);
                             box-shadow: none;

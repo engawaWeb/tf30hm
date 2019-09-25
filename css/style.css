@@ -574,6 +574,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.qa__list__item > dl > dt:hover {
+  opacity: .7;
 }
 
 .qa__list__item > dl > dt::before {
@@ -816,6 +823,7 @@
   height: 240px;
   padding: 0.4em 0.8em;
   width: 100%;
+  max-width: 100%;
   /* IE */
 }
 
