@@ -460,6 +460,130 @@ $mtop: 5;
     }
 }
 
+.modal-wrapper{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    z-index:99999;
+    display: none;
+}
+.modal{
+    position: fixed;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 930px;
+    max-width: 85%;
+    max-height: 90%;
+}
+.modal-container{
+    padding: 65px 56px 20px;
+    @include mq(){
+        padding: 5%;
+    }
+}
+.modal-inner{
+    max-height: 50vh;
+    overflow-y:scroll;
+}
+.modal-inner::-webkit-scrollbar{
+    display:none;
+}
+.close-btn{
+    position: absolute;
+    top:-22px;
+    right: -22px;
+    display: block;
+    width: 43px;
+    height: 43px;
+    border-radius: 22px;
+    background: $theme_blue;
+    &::before{
+    @include beforeAfter();
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        display: block;
+        width: 1.6rem;
+        height: 0.3rem;
+        background: #fff;
+        border-radius: 3px;
+        transition: all 0.1s;
+    }
+    &::after{
+    @include beforeAfter();
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        display: block;
+        width: 1.6rem;
+        height: 0.3rem;
+        background: #fff;
+        border-radius: 3px;
+    }
+}
+.js-close{
+    cursor: pointer;
+}
+.idxHeading02{
+    position: relative;
+    line-height: 1.28;
+    padding: 0 0 24px;
+    margin:0 0  46px 0 ;
+    color: #707070;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom:0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: inline-block;
+        width: 155px;
+        height: 2px;
+        background: $theme_blue;
+    }
+}
+.sectionInner{
+    margin: 30px 0 0;
+    padding: 0 0 30px ;
+}
+.idxHeading03 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0 0 0 2.8rem;
+    color: #707070;
+    border-left: 3px solid #3F51B5;
+}
+.textBlock{
+    margin: 18px 0 0 28px;
+    color: #707070;
+}
+.buttonPattern01 {
+    display: inline-block;
+    max-width: 100%;
+    width: 180px;
+    padding: 1rem 1.6rem .7rem;
+    background: #3F51B5;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px #00000029;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.3125;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
 #contact{
     background: darken(#EFEFEF, 10%);
 }

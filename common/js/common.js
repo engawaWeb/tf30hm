@@ -40,4 +40,12 @@ $(function(){
             $dd.slideDown();
         }
     });
+
+    //モーダル
+    $('.contact__form__check_link').on('click', () => {
+        $('.modal-wrapper').fadeIn();
+    });
+    $('.js-close').on('click', () => {
+        $('.modal-wrapper').fadeOut();
+    });
 });
